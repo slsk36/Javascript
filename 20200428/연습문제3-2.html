@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- 문자열을 입력받아 안녕이라는 글자가 포함되어있지 않으면 인사를 안하다니 출력하는 코드 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var input = prompt('인사를 하세요','');
+        var findString="안녕";
+
+        switch (true) {
+            case input.indexOf(findString) != -1 :
+                alert('안녕안녕');
+                break;
+        
+            default:
+                alert('인사를 안하다니...');
+                break;
+        }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

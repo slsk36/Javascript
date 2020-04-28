@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- Number함수 텍스트타입을 숫자로 바꾸는 함수
+    자료형 일치 연산자 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var inputText = prompt("inputText","");
+        inputText = Number(inputText) + 11;
+        // inputText += 11; string 형으로 1111 알람뜸
+        alert(inputText);
+
+        var a = "11";
+        var b = 11;
+
+        if(a==b){
+            console.log("같음");
+        }
+        if(a===b){
+            console.log("=== 같다");
+        }else{
+            console.log(" ===다르다");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

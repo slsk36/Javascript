@@ -1,0 +1,38 @@
+<!-- 현재 년월일 날짜시간 팝업 및 출력하기 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var date = new Date();
+
+        alert(date);
+
+        var hour = date.getHours();
+        var min = date.getMinutes();
+        var second = date.getSeconds();
+
+        console.log("hour =" +hour);
+        console.log("min =" +min);
+        console.log("second =" +second);
+
+        var year = date.getUTCFullYear();
+        var month = date.getMonth();
+        var date = date.getDate();
+
+        console.log("year =" +year);
+        console.log("month =" +month);
+        console.log("date =" +date);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    setInterval(function(){document.body.innerHTML = new Date();},1000);
+    
+</script>

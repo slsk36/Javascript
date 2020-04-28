@@ -1,0 +1,40 @@
+<!-- 배열 사용방법 넣을때는 push, 뺄때는 pop -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    var marray = [13,45,50,60,function(){alert('test')}];
+    // var mobject = {
+    //     a:10,
+    //     b:20,
+    //     c:function(){}
+    // };
+
+    // alert(marray);
+    // marray[4](); 
+    // 4번째 배열의 test가 팝업된다.
+    // alert(mobject);
+
+    marray.push(11);
+    marray.push({a:10,b:20});
+    marray.push("abcdef");
+
+    for(var i=0; i<marray.length;i++){
+        console.log("marray["+i+"] =" +marray[i]);
+    }
+
+    console.log(marray.pop());
+    for(var i=0; i<marray.length;i++){
+        console.log("marray["+i+"] =" +marray[i]);
+    }
+
+</script>

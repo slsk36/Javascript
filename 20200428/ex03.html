@@ -1,0 +1,37 @@
+<!-- 정수값을 입력해서 버튼을 누르면 콜솔창에서 짝수인지 홀수인지 판별하기
+    switch와 if else 조건문을 이용 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="a">
+    <button onclick="doA();">버튼</button>
+</body>
+</html>
+
+<script>
+    function doA(){
+        var input_a = document.getElementById("a");
+        // console.log(input_a);
+        console.log("input_a.value=" +input_a.value);
+
+        // switch (input_a.value%2){
+        //     case 0:
+        //         console.log(input_a.value +"는 짝수입니다.");
+        //         break;
+        //     case 1:
+        //         console.log(input_a.value +"는 홀수입니다.");
+        //         break;
+        if(input_a.value%2 === 0){
+            console.log(input_a.value +"는 짝수입니다.");
+        }
+        else{
+            console.log(input_a.value +"는 홀수입니다.");
+        }
+    }
+
+</script>

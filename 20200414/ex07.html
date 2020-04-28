@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!-- 키워드의 비동기 함수
+var 이아니라 let을 써야하는 이유-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        for(let i=0; i<3; i++){
+            setTimeout(() => {
+            alert(i); 
+            }, 1000*i);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

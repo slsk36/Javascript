@@ -1,0 +1,11 @@
+git 명령어
+git config --global user.name
+git config --global user.email
+git init
+git clone
+git add .
+git commit -m "message"
+git push
+git push -f origin master
+
+git rebase
