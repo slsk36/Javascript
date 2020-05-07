@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mdiv" style="width: 100px; height: 100px; background-color: red;"></div>
+    <button onclick="doA('yellow')">1btn</button>
+    <button onclick="doA('blue')">2btn</button>
+    <button onclick="doA('red')">3btn</button>
+</body>
+</html>
+<script>
+    var doA =function(a){
+        alert("a="+a);
+        document.getElementById("mdiv").style.backgroundColor =a;
+    }
+    // document.getElementById("mdiv").click(function)
+    document.getElementById("mdiv").onclick = function(){
+        alert("test");
+        aa(); //aa함수를 호출하라
+    }
+
+    function aa(){
+        alert("선언적함수 aa");
+    }
+    var aa = function(){
+        alert("익명함수 aa");
+    }
+</script>

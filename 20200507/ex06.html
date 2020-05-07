@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="doA('aa')">a</button>
+    <button onclick="doA('aa','bb')">a,b</button>
+    <button onclick="doA('aa','bb','cc')">a,b,c</button>
+</body>
+</html>
+<script>
+    var aa=[];
+    var aa= Array();
+    var bb= Array(10);
+
+    var cc = Array(10,20,30);
+
+    function doA(a){
+        console.log('a')
+    }
+    function doA(a,b){
+        console.log('a','b')
+    }
+    function doA(a,b,c){
+        console.log('a','b','c')
+    }
+</script>

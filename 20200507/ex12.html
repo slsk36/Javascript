@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지구가 태양주위를 돌게 하기</title>
+    <style>
+        div{
+            position: absolute;
+            width: 100px; height: 100px;
+        }
+        #sun{
+            background: url('sun.jpg');
+            left: 300px;
+            top: 250px;
+        }
+        #earth{
+            background: url('earth.jpg');
+            /* left: 300px;
+            top: 250px; */
+        }
+    </style>
+</head>
+<body>
+    <div id="sun" ></div>
+    <div id="earth" ></div>
+</body>
+</html>
+<script>
+    var left = 0;
+    var top = 0;
+    var r= 200;
+    var gak = 30;
+    setInterval(function() {
+        var earth = document.getElementById("earth");
+        // earth.style.left = Number(earth.style.left)+30+"px";
+        // earth.style.top = Number(earth.style.top)+30+"px";
+        var y = Math.sin(gak)*r;
+        var x = Math.cos(gak)*r;
+        gak++;
+        console.log("x= " +x);
+        console.log("y= " +y);
+
+        earth.style.left = (x+300)+"px";
+        earth.style.top = (y+250)+"px";
+    }, 1000);
+</script>

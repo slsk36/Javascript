@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선언적 함수</title>
+</head>
+<body>
+    <button id="a" onclick="doA();">button</button>
+    <div id="mdiv" style="width: 100px; 
+    height: 100px; background-color: rebeccapurple;" onmouseover="doB();">
+    </div>
+</body>
+</html>
+<script>
+    doA();
+    function doA(){
+        alert("doA함수입니다.");
+    }
+    function doB(){
+        document.getElementById("mdiv").style.backgroundColor = "red";
+    }
+
+</script>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    var a = function(){
+        alert("test");
+        return 10;
+    }
+    alert(a);
+    alert(a());
+
+    (function(){ 
+        alert("test2");
+        document.body.innerHTML="abcd";
+        if(10<0){
+            alert("10은 0보다 작다.");
+        }else{
+            alert("10은 0보다 크다");
+        }    
+    })(); //익명함수를 선언하자마자 호출해서 사용하고 버림
+</script>

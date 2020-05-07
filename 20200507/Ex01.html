@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!-- 중첩반복문의 피라미드 만들기 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="printArea">
+        
+    </div>
+</body>
+</html>
+<script>
+    var star="";
+    
+    for (let i = 0; i < 10; i++) {
+        //칸 띄우기
+        for (let j = 0; j < 9-i; j--) {
+            star += " ";
+        }
+        //star 1 3 5 7 9 11 13 15 17 19
+        for (let j = 0; j < j+1; j++) {
+            star += "*";
+            
+        }
+        
+        star += "<br/>";
+    }
+    alert(star);
+    // star.replace("\n", "<br/>");
+    //document.getElementById("printArea").innerHTML=star;
+</script>

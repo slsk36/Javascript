@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>타이머함수</title>
+</head>
+<body>
+    <div id="mdiv" style="width: 100px; height: 100px; background-color: seagreen;"></div>
+    
+</body>
+</html>
+<script>
+    // setTimeout(function(){
+    //     document.getElementById("mdiv").style.marginLeft = "50px";
+    // }, 1000); //1초뒤에 화면이 움직임
+    var a =50;
+    setInterval(function(){
+        document.getElementById("mdiv").style.marginLeft = a+"px";
+        a += 50;
+    }, 2000);
+
+    setTimeout(clearInterval(myI), 10000);
+
+    // function stopMyI(){
+    //     clearInterval(myI);
+    // }
+</script>
