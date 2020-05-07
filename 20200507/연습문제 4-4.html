@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- [52,273,102,32,57,103,31,2] 와 같은 숫자 배열이 주어질 때, 배열 내부에서의 최대값과 최소값을 찾는
+코드를 작성해보세요 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    var array = [52,273,102,32,57,103,31,2];
+    
+    var min = array[0];
+    for (let i = 0; i < array.length; i++) {
+       if (min > array[i]){
+           min = array[i];
+       } 
+    }
+    alert('최소값 ' +min);
+
+    var max = array[0];
+    for (let i = 0; i < array.length; i++){
+        if (max < array[i]){
+            max = array[i];
+        }
+    }
+    alert('최대값 ' +max);
+</script>

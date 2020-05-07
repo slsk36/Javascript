@@ -13,5 +13,20 @@
 </body>
 </html>
 <script>
+    while (true){
+        var input = prompt("대화를 입력하세요","");
+        // var whatTime="몇시";
+        if (input.indexOf("안녕") >= 0) {
+            alert("안녕하세요");
+        }else if (input.indexOf("몇시") >= 0) {
+            var hours = (new Date()).getHours();
+            var min = (new Date()).getMinutes();
+            var sec = (new Date()).getSeconds();
+            alert(hours + '시' + min + '분' + sec + '초 입니다');
+        }else if (input.indexOf("잘있어") >= input.indexOf("잘있어") >= 0) {
+            alert("안녕히가세요");
+            break;
+        }
+    }
     
 </script>
