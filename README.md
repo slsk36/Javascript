@@ -32,7 +32,9 @@ vscode로 github 업로드
 4.git remote -v      
 //원격저장소 주소 다시 확인해보고   
 5.git push -u origin master   
-//원격저장소에 로컬저장소에 있는 파일 올리기    
+//원격저장소에 로컬저장소에 있는 파일 올리기
+
+※push error가 발생시 git pull 명령어 입력해서 원격저장소와 로컬저장소 상태를 맞춰주기
    
    
    
