@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- 계산기 만들기 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계산기</title>
+    <style>
+        body{
+            text-align: center;
+            margin: 50px; 
+        }
+       
+        ul{
+            list-style-type: none;
+            float: left;
+            background-color: aquamarine;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            border-style: solid;
+        }
+        #inputA{
+            height: 35px;
+            font-size: medium;
+        }
+        button{
+            width: 60px;
+            height: 40px;
+            margin: 5px;
+            background-color: black;
+            font-weight: bold;
+            font-size: medium; color: white;
+        }
+        /* #container{
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            background-color: black;
+            font-weight: bold;
+            font-size: medium; color: cornsilk;
+            
+        } */
+    </style>
+    <script>
+        window.onload = function(){
+
+            document.getElementById("btnA").onclick=function(){
+            var inputValue = document.getElementById("inputA").value;
+                alert(eval(inputValue));
+            }
+        }
+    </script>
+    </head>
+<body>
+    <ul>
+    <h2>사칙연산 계산기</h2>
+    <div id="input">
+        <input type="text" name="" id="inputA" value="">
+        <button id=btnA>계산</button>
+    </div>
+    <div id="container">
+        <div class="calculator">
+            <br>
+            <button onclick="add(1)">1</button>
+            <button onclick="add(2)">2</button>
+            <button onclick="add(3)">3</button>
+            <br>
+            <button onclick="add(4)">4</button>
+            <button onclick="add(5)">5</button>
+            <button onclick="add(6)">6</button>
+            <br>
+            <button onclick="add(7)">7</button>
+            <button onclick="add(8)">8</button>
+            <button onclick="add(9)">9</button>
+            <br>
+            <button onclick="add('+')">+</button>
+            <button onclick="add(0)">0</button>
+            <button onclick="add('-')">－</button>
+            <br>
+            <button onclick="add('*')">×</button>
+            <button onclick="add('/')">÷</button>
+            <button onclick="reset()">AC</button>
+            <br>
+            
+            
+        </div>
+    </div>
+    </ul>
+</body>
+</html>
+<script>
+    function add(char){
+        var display = document.getElementById("inputA");
+            display.value=display.value + char;
+    } 
+    function reset(){
+        document.getElementById("inputA").value="";
+    }
+</script>

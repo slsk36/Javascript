@@ -1,0 +1,35 @@
+<!-- 4-1 연습문제 선생님 풀이 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    while(1){
+        var input = prompt("입력하세요","");
+        console.log("input= " +input);
+
+        var today = new Date();
+        var nowtime = (today.getHours())+"시"+today.getMinutes()+"분";
+        alert(nowtime)
+        
+        if((input.indexOf("안녕") > -1) && ( today.getHours() > 6 && today.getHours()<12))  {
+            alert("안녕하세요 현재시간은 오전입니다.");
+        }
+        else if(input.indexOf("굿모닝") > -1){
+            alert("굿모닝");
+        }
+        else if(input.indexOf("굿나잇") > -1){
+            alert("굿나잇");
+        }
+        else if(input.indexOf("잘가") > -1){
+            break;
+        }
+    }
+</script>

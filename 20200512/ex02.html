@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- 연습문제 4-2 선생님 풀이 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="start">
+    <input type="text" name="" id="end">
+    <button id="conf">확인</button>
+</body>
+</html>
+<script>
+    var sum = 0;
+    // for (let i = 0; i < 101; i++) {
+    //     sum += i;
+    // }
+    //     document.body.innerHTML = sum;
+
+    document.getElementById("conf").onclick = function(){
+        var start = Number(document.getElementById("start").value);
+        var end = Number(document.getElementById("end").value);
+
+        console.log("start= "+start);
+        console.log("end= "+end);
+
+        sum = 0;
+        for (let i = Number(start); i <= Number(end); i++) {
+            sum += i;
+            console.log("sum= "+sum);
+        }
+        document.body.innerHTML = sum;
+    }
+</script>

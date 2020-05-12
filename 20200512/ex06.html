@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- ECMAScript6 버전에 추가된 기능 기본매개변수, 화살표함수
+    배열과 객체 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    var aaa=[];//배열
+    var bbb={
+        a:10,
+        dob:function(){
+            alert("test");
+        },
+    }; //객체
+    alert(bbb.a);
+    bbb.dob();
+
+    alert(bbb["a"]);
+    bbb["dob"]();
+
+    var doA = function(a,b){return a+b};
+    const doB = (a,b)=>{return a+b};
+
+    alert(doA(1,3));
+    alert(doB(1,3));
+
+    (function(){
+        alert("익명함수");
+    })();
+    (()=>{
+        alert("화살표함수");
+    })();
+
+    function test(a,b=1,c=2){
+        console.log("a= "+a);
+        console.log("b= "+b);
+        console.log("c= "+c);
+    }
+    test(11,22,33);
+    test(11,22);
+    test(11);
+</script>

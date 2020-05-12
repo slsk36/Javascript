@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    eval(alert('실행해준다'));
+    eval(alert(1+3));
+    eval(alert(3*4));
+
+    eval( alert( (function(){return 3;})() ));
+
+    var aa=1/0;
+    var boolA = isFinite(aa); //무한대 값인지 확인
+
+    var bb=1/0;
+    var boolB = isNaN(bb); //숫자 인지 아닌지 확인
+
+    alert(boolA);
+    alert(boolB);
+</script>

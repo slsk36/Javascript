@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- 
+● power함수만들기
+-매개변수를 하나 넣으면 제곱해준다(예:power(2)=4)
+-매개변수를 두 개 넣으면 <첫 번째 매개변수>의 <두 번째 매개변수> 제곱만큼 해준다
+ (예:power(2,3)=8)
+
+● multiply함수 만들기
+-매개변수로 넣은 값을 모두 곱해준다(예: multiply(1,2,3,4,5) = 120)
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    var a = Number(prompt('매개변수1 입력'));
+    var b = Number(prompt('매개변수2 입력'));
+
+    function power(a,b){
+        
+        if(b){
+            var output = 1;
+            for (let i = 0; i < b; i++) {
+                output *= a;
+            }
+            return output;
+        }else{
+            return a * a;
+        }
+    } 
+    alert(power(a)); 
+    alert(power(a,b)); 
+</script>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!-- 연습문제 4-4  선생님 풀이 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="print"></div>
+</body>
+</html>
+<script>
+    var arr= [52,273,102,32,57,103,31,2];
+    var max = arr[0];
+    var min = arr[0];
+    for (const element of arr) {
+        if(element > max)
+            max = element;
+        if(element < min)
+            min = element;
+    }
+    document.getElementById("print").innerHTML = ("최대값= "+max+"\n최소값= "+min);
+</script>
