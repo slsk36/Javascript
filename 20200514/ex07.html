@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    function clone(object){
+        var output={};
+        for (const key in object) {
+            output[key] = object[key];
+                
+            }
+            return output;
+        }
+
+        var original = {a:10,b:20};
+        var refer = original;
+
+        var cloned = clone(original);
+
+        original.a = 30;
+
+        console.log(original);
+        console.log(refer);
+        console.log(cloned);
+
+        alert(JSON.stringify(refer,null,2));
+        alert(JSON.stringify(cloned,null,2));
+    
+</script>

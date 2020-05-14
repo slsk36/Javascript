@@ -1,0 +1,44 @@
+<!-- 책에 있는 데이터를 자바스크립트 객체의 배열로 만들기 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    function makeBug(name,mineral,gas,supply){
+        var bugInfo={
+        //속성
+            이름: name,
+            미네랄: mineral,
+            가스: gas,
+            공급품: supply,
+
+            //메서드
+            toString: function(){
+                return this.이름 + '\t' 
+                + this.미네랄+'\t'+this.가스+'\t'+this.공급품+'\t';
+            }
+        };
+        return bugInfo;
+    }
+    //bug정보의 배열
+    var bugArr=[];
+    //배열에 요소넣기
+    bugArr.push(makeBug('일벌레',50,0,1));
+    bugArr.push(makeBug('여왕',150,0,2));
+    bugArr.push(makeBug('바퀴',75,25,2));
+    bugArr.push(makeBug('히드라리스크',100,50,2));
+    bugArr.push(makeBug('타락귀',150,100,2));
+    //출력
+    var output ='이름\t 미네랄\t 가스\t 공급품\n';
+    for (const key in bugArr) {
+        output += bugArr[key].toString()+'\n';
+    }
+    alert(output);
+</script>

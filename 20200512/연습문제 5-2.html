@@ -19,21 +19,21 @@
 </body>
 </html>
 <script>
-    var a = Number(prompt('매개변수1 입력'));
-    var b = Number(prompt('매개변수2 입력'));
-
+    
     function power(a,b){
-        
-        if(b){
-            var output = 1;
-            for (let i = 0; i < b; i++) {
-                output *= a;
+        if(b) {
+            var result=1;
+            for (let i = 1; i <= b; i++){
+                result *= a;
             }
-            return output;
+            return result;
         }else{
-            return a * a;
+            return a*a;
         }
-    } 
-    alert(power(a)); 
-    alert(power(a,b)); 
+    }
+
+    function multiply(){}
+
+    alert(power(2));
+    alert(power(2,3));
 </script>

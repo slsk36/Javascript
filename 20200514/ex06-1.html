@@ -1,0 +1,34 @@
+<!-- 책에 주어진 표를 자바스크립트 객체로 만들기 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="book">book infomation</div>    
+</body>
+</html>
+<script>
+    //변수선언
+    var book={};
+    //속성추가
+    book.이름='Nature of Code';
+    book.가격='30,000원';
+    book.저자='다니엘 쉬프만';
+    book.ISBN='9788968481901';
+    book.페이지수='620페이지';
+    //메서드
+    book.toString=function(){
+        var output='';
+        for (var key in this) {
+            if (key != 'toString') {
+                output += key + ' : ' + this[key] + '<br>';
+            }
+        }
+        return output;
+    };
+    //alert(book.toString());
+    document.body.innerHTML = book.toString();
+</script>

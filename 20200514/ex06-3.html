@@ -1,0 +1,31 @@
+<!-- 자기자신을 자바스크립트 객체로 표현해보세요 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoo nina</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    var yunina={};
+    //속성추가
+    yunina.이름='nina';
+    yunina.나이='33';
+    yunina.생일='1988.10.22';
+    yunina.특기='예쁘고 똑똑함';
+    //메서드
+    yunina.toString=function(){
+        var output='';
+        for (var key in this) {
+            if(key != 'toString'){
+            output += key+':'+this[key]+'\n';
+            }
+        }
+        return output;
+    }
+    alert(yunina.toString());
+</script>

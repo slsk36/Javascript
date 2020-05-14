@@ -1,0 +1,32 @@
+<!-- 객체를 생성하는 함수 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    function Student(name,math,eng){
+        this.이름=name;
+        this.수학=math;
+        this.영어=eng;
+        // student = {"이름":name,"수학":math,"영어":eng};
+        // return student;
+    }
+
+    var students = [];
+    // students.push(makeStudent("박",100,100));
+    // students.push(makeStudent("밤",100,100));
+    // students.push(makeStudent("방",100,100));
+
+    students.push(new Student("박",100,100));
+    students.push(new Student("밤",100,100));
+    students.push(new Student("방",100,100));
+
+    console.log(students);
+</script>
